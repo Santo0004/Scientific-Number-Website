@@ -4,9 +4,11 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Fixed Header - Now properly centered */
+/* Fixed Header */
 #header {
     position: fixed;
     top: 0;
@@ -25,26 +27,35 @@ body {
 }
 
 #header h1 {
-    font-size: 2.5rem; /* Large font size */
+    font-size: 2.5rem;
     margin: 0;
     color: #333;
     font-weight: bold;
 }
 
-/* Main Content */
+/* Centered Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 100px; /* Accounts for fixed header/footer */
+}
+
 .container {
     background-color: #d4bcc5;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
     max-width: 500px;
-    margin: 100px auto 120px; /* Adjusted for fixed header/footer */
 }
 
 input[type="text"] {
     padding: 12px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -60,6 +71,7 @@ button {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 button:hover {
