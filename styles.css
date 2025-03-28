@@ -1,11 +1,11 @@
 body {
-    font-family: comic-sans;
-    background-color: #C70039;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
 }
 
 .container {
