@@ -13,7 +13,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: #d4bcc5;
     padding: 10px 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ button {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #d4bcc5;
     padding: 10px;
     text-align: center;
     border-top: 2px solid #ddd;
