@@ -52,7 +52,7 @@ input[type="text"] {
     padding: 10px;
     width: 80%;
     max-width: 200px;
-    margin: 10px 0;
+    margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 15px;
     font-size: 1rem;
@@ -93,13 +93,13 @@ button {
 #about h2 {
     font-size: 1.2rem;
     color: #333;
-    margin: 5px 0;
+    margin: 0 auto;
 }
 
 #about p {
     font-size: 0.9rem;
     color: #666;
-    margin: 5px 0;
+    margin: 0 suto;
 }
 
 /* Mobile-first adjustments */
