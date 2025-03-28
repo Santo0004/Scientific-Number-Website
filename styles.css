@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: #C70039;
@@ -8,101 +9,110 @@ body {
     flex-direction: column;
 }
 
-/* Fixed Header */
+/* Compact Header */
 #header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: d4bcc5;
-    padding: 15px 0;
+    background-color: white;
+    padding: 10px 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
 }
 
 #header h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin: 0;
     color: #333;
-    font-weight: bold;
+    line-height: 1.2;
 }
 
-/* Centered Main Content */
+/* Centered Compact Content */
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px 100px; /* Accounts for fixed header/footer */
+    padding: 70px 20px 100px;
 }
 
 .container {
     background-color: #d4bcc5;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 300px; /* More compact width */
 }
 
 input[type="text"] {
-    padding: 12px;
+    padding: 10px;
     width: 100%;
-    max-width: 250px;
-    margin-bottom: 15px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 15px;
     font-size: 1rem;
+    text-align: center;
 }
 
 button {
-    padding: 12px 25px;
+    padding: 10px 20px;
     background-color: #c45183;
     color: #fff;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #400f24;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 120px;
 }
 
 #result {
-    margin-top: 20px;
+    margin: 15px 0;
     font-size: 1.2rem;
     min-height: 30px;
+    font-weight: bold;
 }
 
-/* Fixed Footer */
+/* Compact Footer */
 #about {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #d4bcc5;
-    padding: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
     text-align: center;
     border-top: 2px solid #ddd;
 }
 
 #about h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 
 #about p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #666;
-    margin: 0;
+    margin: 5px 0;
+}
+
+/* Mobile-first adjustments */
+@media (min-width: 768px) {
+    /* Keep mobile styling on desktop */
+    body {
+        justify-content: center;
+    }
+    
+    .container {
+        padding: 25px;
+    }
+    
+    #header h1 {
+        font-size: 2rem;
+    }
 }
