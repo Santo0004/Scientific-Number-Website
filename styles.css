@@ -1,4 +1,3 @@
-/* Base Styles */
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: #C70039;
@@ -9,7 +8,6 @@ body {
     flex-direction: column;
 }
 
-/* Compact Header */
 #header {
     position: fixed;
     top: 0;
@@ -29,7 +27,6 @@ body {
     line-height: 1.2;
 }
 
-/* Centered Compact Content */
 main {
     flex: 1;
     display: flex;
@@ -45,14 +42,14 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 90%;
-    max-width: 300px; /* More compact width */
+    max-width: 300px;
 }
 
 input[type="text"] {
     padding: 10px;
     width: 80%;
     max-width: 200px;
-    margin: 0 auto;
+    margin: 0;
     border: 1px solid #ccc;
     border-radius: 15px;
     font-size: 1rem;
@@ -79,7 +76,6 @@ button {
     font-weight: bold;
 }
 
-/* Compact Footer */
 #about {
     position: fixed;
     bottom: 0;
@@ -99,12 +95,12 @@ button {
 #about p {
     font-size: 0.9rem;
     color: #666;
-    margin: 0 suto;
+    margin: 0;
 }
 
-/* Mobile-first adjustments */
+
 @media (min-width: 768px) {
-    /* Keep mobile styling on desktop */
+
     body {
         justify-content: center;
     }
